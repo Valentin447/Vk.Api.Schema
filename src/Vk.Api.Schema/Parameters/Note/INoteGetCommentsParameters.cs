@@ -1,0 +1,51 @@
+﻿using Vk.Api.Schema.Enums.Note;
+
+namespace Vk.Api.Schema.Parameters.Note
+{
+    /// <summary>
+    /// Интерфейс для представления параметров запроса для notes.getComments <para/>
+    /// Документация: <see href="https://vk.com/dev/notes.getComments"/>
+    /// </summary>
+    public interface INoteGetCommentsParameters
+    {
+        /// <summary>
+        /// Идентификатор заметки
+        /// </summary>
+        /// <remarks>
+        /// Положительное число, обязательный параметр
+        /// </remarks>
+        int NoteId { get; set; }
+
+        /// <summary>
+        /// Идентификатор владельца заметки
+        /// </summary>
+        /// <remarks>
+        /// положительное число, по умолчанию идентификатор текущего пользователя
+        /// </remarks>
+        int OwnerId { get; set; }
+
+        /// <summary>
+        /// Сортировка списка комментариев к заметке по дате добавления
+        /// </summary>
+        /// <remarks>
+        /// По умолчанию 0
+        /// </remarks>
+        CommentsSort Sort { get; set; }
+
+        /// <summary>
+        /// Cмещение, необходимое для выборки определенного подмножества комментариев
+        /// </summary>
+        /// <remarks>
+        /// Положительное число, по умолчанию 0
+        /// </remarks>
+        int Offset { get; set; }
+
+        /// <summary>
+        /// Количество комментариев, которое необходимо получить
+        /// </summary>
+        /// <remarks>
+        /// Положительное число, по умолчанию 20, максимальное значение 100
+        /// </remarks>
+        int Count { get; set; }
+    }
+}
