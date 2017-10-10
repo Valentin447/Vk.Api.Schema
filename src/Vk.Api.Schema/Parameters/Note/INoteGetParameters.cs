@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using Vk.Api.Schema.Enums.Note;
 
 namespace Vk.Api.Schema.Parameters.Note
 {
@@ -39,11 +38,12 @@ namespace Vk.Api.Schema.Parameters.Note
         int Count { get; set; }
 
         /// <summary>
-        /// Определяет как сортировать список заметок
+        /// Сортировка списка заметок по дате создания в порядке возрастания
         /// </summary>
         /// <remarks>
-        /// По умолчанию 0
+        /// В порядке возрастания 1, в порядке убывания 0,
+        /// по умолчанию 0
         /// </remarks>
-        NotesSort Sort { get; set; }
+        bool IsAscendingSort { get; set; }
     }
 }

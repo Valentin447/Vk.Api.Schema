@@ -1,6 +1,4 @@
-﻿using Vk.Api.Schema.Enums.Note;
-
-namespace Vk.Api.Schema.Parameters.Note
+﻿namespace Vk.Api.Schema.Parameters.Note
 {
     /// <summary>
     /// Интерфейс для представления параметров запроса для notes.getComments <para/>
@@ -25,12 +23,13 @@ namespace Vk.Api.Schema.Parameters.Note
         int OwnerId { get; set; }
 
         /// <summary>
-        /// Сортировка списка комментариев к заметке по дате добавления
+        /// Сортировка списка комментариев к заметке по дате добавления в порядке убывания
         /// </summary>
         /// <remarks>
-        /// По умолчанию 0
+        /// В порядке убывания 1, в порядке возрастания 0,
+        /// по умолчанию 0
         /// </remarks>
-        CommentsSort Sort { get; set; }
+        bool IsDescendingSort { get; set; }
 
         /// <summary>
         /// Cмещение, необходимое для выборки определенного подмножества комментариев

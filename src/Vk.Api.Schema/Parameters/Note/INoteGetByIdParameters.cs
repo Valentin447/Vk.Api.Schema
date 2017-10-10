@@ -1,6 +1,4 @@
-﻿using Vk.Api.Schema.Enums.Note;
-
-namespace Vk.Api.Schema.Parameters.Note
+﻿namespace Vk.Api.Schema.Parameters.Note
 {
     /// <summary>
     /// Интерфейс для представления параметров запроса для notes.getById <para/>
@@ -31,6 +29,6 @@ namespace Vk.Api.Schema.Parameters.Note
         /// работает, только если запрашиваются заметки текущего пользователя,
         /// по умолчанию 0
         /// </remarks>
-        NoteNeedWiki NeedWiki { get; set; }
+        bool NeedWiki { get; set; }
     }
 }
