@@ -20,6 +20,6 @@
         /// <remarks>
         /// Положительное число, по умолчанию идентификатор текущего пользователя
         /// </remarks>
-        int OwnerId { get; set; }
+        int? OwnerId { get; set; }
     }
 }

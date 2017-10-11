@@ -19,7 +19,7 @@ namespace Vk.Api.Schema.Parameters.Note
         /// <remarks>
         /// Положительное число, по умолчанию идентификатор текущего пользователя
         /// </remarks>
-        int UserId { get; set; }
+        int? UserId { get; set; }
 
         /// <summary>
         /// Cмещение, необходимое для выборки определенного подмножества заметок
@@ -27,7 +27,7 @@ namespace Vk.Api.Schema.Parameters.Note
         /// <remarks>
         /// Положительное число, по умолчанию 0
         /// </remarks>
-        int Offset { get; set; }
+        int? Offset { get; set; }
 
         /// <summary>
         /// Количество заметок, информацию о которых необходимо получить
@@ -35,7 +35,7 @@ namespace Vk.Api.Schema.Parameters.Note
         /// <remarks>
         /// Положительное число, по умолчанию 20, максимальное значение 100
         /// </remarks>
-        int Count { get; set; }
+        int? Count { get; set; }
 
         /// <summary>
         /// Сортировка списка заметок по дате создания в порядке возрастания
@@ -44,6 +44,6 @@ namespace Vk.Api.Schema.Parameters.Note
         /// В порядке возрастания 1, в порядке убывания 0,
         /// по умолчанию 0
         /// </remarks>
-        bool IsAscendingSort { get; set; }
+        bool? IsAscendingSort { get; set; }
     }
 }
