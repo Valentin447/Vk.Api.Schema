@@ -1,4 +1,6 @@
-﻿namespace Vk.Api.Schema.Parameters.Pages
+﻿using System;
+
+namespace Vk.Api.Schema.Parameters.Pages
 {
     /// <summary>
     /// Интерфейс для представления параметров запроса для pages.clearCache <para/>
@@ -12,6 +14,6 @@
         /// <remarks>
         /// Обязательный параметр
         /// </remarks>
-        string Uri { get; set; }
+        Uri Url { get; set; }
     }
 }
