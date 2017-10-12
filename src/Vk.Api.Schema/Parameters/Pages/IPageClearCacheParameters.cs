@@ -12,6 +12,6 @@
         /// <remarks>
         /// Обязательный параметр
         /// </remarks>
-        string Url { get; set; }
+        string Uri { get; set; }
     }
 }
