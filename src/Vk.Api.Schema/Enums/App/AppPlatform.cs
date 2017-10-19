@@ -1,4 +1,6 @@
-﻿namespace Vk.Api.Schema.Enums.App
+﻿using System.ComponentModel;
+
+namespace Vk.Api.Schema.Enums.App
 {
     /// <summary>
     /// Платформа
@@ -8,21 +10,25 @@
         /// <summary>
         /// iOS
         /// </summary>
-        ios,
+        [Description("ios")]
+        Ios,
 
         /// <summary>
         /// Android
         /// </summary>
-        android,
+        [Description("android")]
+        Android,
 
         /// <summary>
         /// Windows Phone
         /// </summary>
-        winphone,
+        [Description("winphone")]
+        Winphone,
 
         /// <summary>
         /// Приложения на vk.com
         /// </summary>
-        web
+        [Description("web")]
+        Web
     }
 }

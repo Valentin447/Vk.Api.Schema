@@ -1,4 +1,6 @@
-﻿namespace Vk.Api.Schema.Enums.Filters
+﻿using System.ComponentModel;
+
+namespace Vk.Api.Schema.Enums.Filters
 {
     /// <summary>
     /// Фильтр списка установленных приложений

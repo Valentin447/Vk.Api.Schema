@@ -1,4 +1,6 @@
-﻿namespace Vk.Api.Schema.Enums.App
+﻿using System.ComponentModel;
+
+namespace Vk.Api.Schema.Enums.App
 {
     /// <summary>
     /// Тип создаваемого списка друзей
